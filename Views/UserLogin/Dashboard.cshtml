@@ -1,0 +1,16 @@
+﻿@model GP_Project.UserLogin
+
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Dashboard</h2>
+
+ fieldset >
+    < legend > User DashBoard < /legend>
+
+@if (Session["UserName"] != null)
+{< text >
+    Welcome @Session["UserName"].ToString() < /text>
+    } < /fieldset>  
